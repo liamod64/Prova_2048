@@ -112,11 +112,13 @@ HTMLActuator.prototype.updateScore = function (score) {
   this.scoreContainer.textContent = this.score;
 
   if (difference > 0) {
+	/*									//Lighter version
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
 
     this.scoreContainer.appendChild(addition);
+	*/
   }
 };
 
