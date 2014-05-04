@@ -62,7 +62,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  //inner.textContent = tile.value;				//NOT SHOWN, modificato
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -112,11 +112,13 @@ HTMLActuator.prototype.updateScore = function (score) {
   this.scoreContainer.textContent = this.score;
 
   if (difference > 0) {
+	/*									//Lighter version
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
 
     this.scoreContainer.appendChild(addition);
+	*/
   }
 };
 

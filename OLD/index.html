@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 sponsorizzata da ABEOS Osteopathy School</title>
+	<meta name="title" content="2048 personalizzato per ABE O.S. Scuola di Osteopatia">
+	<meta name="description" content="ABE Osteopathy School fa le cose in grande e pensa anche all\'intrattenimento, gioca anche tu a 2048 e sbaraglia i tuoi avversari battendoli sui numeri">
+	<meta name="keywords" content="2048 game abeos scuola osteopatia duamilaquarantotto gioco app virale">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=60dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <img src="2048/logo_main.gif" style="width: 35%">
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Gioca con ABE O.S. e raggiungi<strong> 2048!</strong></p>
+      <a class="restart-button">Nuova partita</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Continua</a>
+          <a class="retry-button">Riprova</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">Come giocare:</strong> Usa le <strong>Frecce sulla tastiera</strong> per muovere i tasselli. Quando tue tasselli contengono lo stesso numero, questi si <strong>uniscono in uno solo!</strong>
+    </p>
+    <hr>
+	<p align="center"><a href="credits.html">Credits</a></p>
+  </div>
+
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
